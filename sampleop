@@ -1,0 +1,45 @@
+Dataset loaded successfully!
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ lstm (LSTM)                 (None, 1, 64)            28672     
+                                                                 
+ dropout (Dropout)           (None, 1, 64)            0         
+                                                                 
+ lstm_1 (LSTM)               (None, 32)              12416     
+                                                                 
+ dropout_1 (Dropout)         (None, 32)              0         
+                                                                 
+ dense (Dense)               (None, 16)              528       
+                                                                 
+ dense_1 (Dense)             (None, 6)               102       
+                                                                 
+=================================================================
+Total params: 41,718
+Trainable params: 41,718
+Non-trainable params: 0
+_________________________________________________________________
+Epoch 1/10
+125/125 [==============================] - 5s 20ms/step - loss: 1.5028 - accuracy: 0.4301 - val_loss: 1.2015 - val_accuracy: 0.5632
+Epoch 2/10
+125/125 [==============================] - 2s 15ms/step - loss: 1.0023 - accuracy: 0.6324 - val_loss: 0.8817 - val_accuracy: 0.6874
+Epoch 3/10
+125/125 [==============================] - 2s 15ms/step - loss: 0.7375 - accuracy: 0.7376 - val_loss: 0.6978 - val_accuracy: 0.7402
+Epoch 4/10
+125/125 [==============================] - 2s 15ms/step - loss: 0.5879 - accuracy: 0.7912 - val_loss: 0.5887 - val_accuracy: 0.7815
+Epoch 5/10
+125/125 [==============================] - 2s 15ms/step - loss: 0.4976 - accuracy: 0.8256 - val_loss: 0.5214 - val_accuracy: 0.8038
+Epoch 6/10
+125/125 [==============================] - 2s 15ms/step - loss: 0.4378 - accuracy: 0.8449 - val_loss: 0.4825 - val_accuracy: 0.8251
+Epoch 7/10
+125/125 [==============================] - 2s 15ms/step - loss: 0.3867 - accuracy: 0.8664 - val_loss: 0.4278 - val_accuracy: 0.8429
+Epoch 8/10
+125/125 [==============================] - 2s 15ms/step - loss: 0.3562 - accuracy: 0.8783 - val_loss: 0.4102 - val_accuracy: 0.8489
+Epoch 9/10
+125/125 [==============================] - 2s 15ms/step - loss: 0.3258 - accuracy: 0.8897 - val_loss: 0.3856 - val_accuracy: 0.8617
+Epoch 10/10
+125/125 [==============================] - 2s 15ms/step - loss: 0.3027 - accuracy: 0.8964 - val_loss: 0.3691 - val_accuracy: 0.8663
+32/32 [==============================] - 0s 5ms/step - loss: 0.3691 - accuracy: 0.8663
+Test Accuracy: 86.63%
+Model saved as 'har_model.h5'
